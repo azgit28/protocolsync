@@ -144,7 +144,7 @@ textarea {
     background-color: blue;
     width: 50%;
 }
-input .submit {
+button .submit {
     display: grid;
     place-items: center;
 }

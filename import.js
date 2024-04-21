@@ -21,3 +21,19 @@ function opentab (evnt,Tab){
     evnt.currentTarget.className += ' active';
 }
 document.getElementById('defaultOpen').click();
+
+
+
+document.getElementById('sendEmailBtn').addEventListener('click', function(){
+    fetch('send_emil.php',{
+        method:"POST"
+    })
+    .then(response =>{
+        if(response.ok) {
+            alert('Email sent sucessfully!');
+        } else {
+            alert('Failed to send email')
+        }
+        
+    } );
+});
